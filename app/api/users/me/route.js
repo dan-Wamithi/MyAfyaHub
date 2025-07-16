@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken"
 import { ObjectId } from "mongodb"
 import bcrypt from "bcryptjs"
 
-export const dynamic = "force-dynamic" // Add this line
+export const dynamic = "force-dynamic" // Ensures this route is always dynamic
 
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
 

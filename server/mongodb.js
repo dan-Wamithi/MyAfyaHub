@@ -16,8 +16,8 @@ export async function connectToDatabase() {
   }
 
   const client = new MongoClient(uri, {
-    // useNewUrlParser: true, // Deprecated, remove
-    // useUnifiedTopology: true, // Deprecated, remove
+    // useNewUrlParser: true, // Deprecated, removed
+    // useUnifiedTopology: true, // Deprecated, removed
   })
 
   cachedClient = await client.connect()

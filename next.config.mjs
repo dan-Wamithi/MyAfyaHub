@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    // appDir: true, // Remove this line
+    // appDir: true, // This line was removed in the previous step
   },
   eslint: {
     ignoreDuringBuilds: true,
