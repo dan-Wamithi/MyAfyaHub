@@ -3,6 +3,8 @@ import { connectToDatabase } from "@/server/mongodb"
 import jwt from "jsonwebtoken"
 import { ObjectId } from "mongodb"
 
+export const dynamic = "force-dynamic" // Add this line
+
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
 
 export async function GET(request) {

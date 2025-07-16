@@ -4,6 +4,8 @@ import jwt from "jsonwebtoken"
 import { ObjectId } from "mongodb"
 import bcrypt from "bcryptjs"
 
+export const dynamic = "force-dynamic" // Add this line
+
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
 
 // Helper function to get user from token
